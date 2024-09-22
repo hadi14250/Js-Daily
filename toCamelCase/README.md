@@ -1,6 +1,6 @@
 # toCamelCase
 
-#### toUpper is a function that turns a word into camel case such as to_upper and or to-upper becomes toUpper
+#### toCamelCase is a function that turns a word into camel case such as to_upper and or to-upper becomes toUpper
 
 it uses regex operation to look for _- and split the words between those characters into string
     which are then mapped over my map which passes the array words and index and performs a function on them, this 
