@@ -1,5 +1,5 @@
 
-const toUpper           = str => str.split(/[_-]/).map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)).join("")
+const toCamelCase           = str => str.split(/[_-]/).map((word, index) => index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)).join("")
 
 const splitTest         = (str, seperator) => str.split(seperator) 
 
@@ -18,9 +18,9 @@ const reset = "\x1b[0m";
 
 /* toUpper Test */ 
 console.log(
-    `- toUpper() test: --->${green}`,
+    `- toCamelCase() test: --->${green}`,
 
-    toUpper("to_upper")
+    toCamelCase("to_upper")
 
     , `${reset}<---\n`
 )
