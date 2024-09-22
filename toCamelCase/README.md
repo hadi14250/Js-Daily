@@ -1,11 +1,11 @@
 # toCamelCase
 
-#### toCamelCase is a function that turns a word into camel case such as to_upper and or to-upper becomes toUpper
+#### toCamelCase is a function that turns a word into camel case such as to_upper and or to-upper becomes toUpper.
 
 it uses regex operation to look for _- and split the words between those characters into string
     which are then mapped over my map which passes the array words and index and performs a function on them, this 
     function is either return the word if the index is 0 because we should not do anything on the first word
-    and if the index is not 0 we convert the first character to uppercase and we concatinate it with the rest of the characters
+    and if the index is not 0 we convert the first character to uppercase and we concatinate it with the rest of the characters.
 
 
     - split()        => splits the string and returns an array of strings, ex: "hey there amigo".split(' ') returns ["hey", "there", "amigo"].
