@@ -2,12 +2,12 @@
 
 ### Requirement
 
-You are given a function `puzzle` that accepts two positive integers in the specified order, `n` and `x`, and returns the result of `n * Math.pow(2, x)`. However, there is one condition: you must shorten the code to meet the strict character count requirement of **11 characters maximum** (without altering how the function behaves for positive integers).
+You are given a function `nTimes2ToPowerOfx` that accepts two positive integers in the specified order, `n` and `x`, and returns the result of `n * Math.pow(2, x)`. However, there is one condition: you must shorten the code to meet the strict character count requirement of **11 characters maximum** (without altering how the function behaves for positive integers).
 
 ## Solution
 
 ```javascript
-const puzzle=(n,x)=>n<<x
+const nTimes2ToPowerOfx=(n,x)=>n<<x
 ```
 
 ## Number of Characters
@@ -26,7 +26,7 @@ There is no need for a return statement if the arrow function is not defined wit
 The expression `n<<x` will be automatically returned:
 
 ```javascript
-const puzzle=(n,x)=>n<<x
+const nTimes2ToPowerOfx=(n,x)=>n<<x
 ```
 <br>
 
@@ -35,14 +35,14 @@ const puzzle=(n,x)=>n<<x
 If you enclose the function code in curly braces, the compiler will require a return statement, this also exceeds the maximum character count:
 
 ```javascript
-const puzzle=(n,x)=>{ return n<<x }
+const nTimes2ToPowerOfx=(n,x)=>{ return n<<x }
 ```
 
 <br>
 
 ### Code Explanation
 
-- `const puzzle = (n, x) =>` declares an arrow function named `puzzle` that takes two parameters: `n` and `x`.
+- `const nTimes2ToPowerOfx = (n, x) =>` declares an arrow function named `nTimes2ToPowerOfx` that takes two parameters: `n` and `x`.
 - `n << x` uses the left shift bitwise operator, which effectively calculates `n * 2^x`. This is a more efficient way to compute powers of two compared to using `Math.pow(2, x)`.
 - The function returns the result of the bitwise operation directly because it is an expression.
 
