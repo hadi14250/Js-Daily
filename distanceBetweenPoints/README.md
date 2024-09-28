@@ -4,11 +4,9 @@ A function that calculates the distance between two points `a` and `b` in a 2D p
 
 ## Formula
 
-The distance between two points \( (x_1, y_1) \) and \( (x_2, y_2) \) is calculated using the Pythagorean theorem:
+The distance between two points \((x_1, y_1)\) and \((x_2, y_2)\) is calculated using the Pythagorean theorem:
 
-\[
-\text{distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-\]
+    distance = √((x₂ - x₁)² + (y₂ - y₁)²)
 
 
 ## Code Explanation
