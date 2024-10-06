@@ -2,7 +2,7 @@ function isLowerAlpha(str) {
   return [...str].every((char) => char >= "a" && char <= "z");
 }
 
-function encrypt(passcode) {
+export function encrypt(passcode) {
   if (passcode.length !== 9 || !isLowerAlpha(passcode)) return "BANG";
   let arr1,
     arr2,
@@ -19,4 +19,4 @@ function encrypt(passcode) {
   return arr2 + arr3 + arr1;
 }
 
-console.log(encrypt("jamesbond"));
+// console.log(encrypt("jamesbond"));
